@@ -7,7 +7,6 @@ resource "aws_vpc_endpoint" "s3" {
   vpc_endpoint_type = "Gateway"
   vpc_id = data.aws_vpc.vpc.id
   route_table_ids = var.route_table_ids
-  private_dns_enabled = var.private_dns_enabled
   tags = {
     Name = var.name == null ? "${data.aws_vpc.vpc.tags["Name"]}S3VpcEndpoint" : var.name
   }

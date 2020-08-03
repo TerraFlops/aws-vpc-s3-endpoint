@@ -14,9 +14,3 @@ variable "route_table_ids" {
   description = "IDs of route teables where endpoint will be exposed"
   default = null
 }
-
-variable "private_dns_enabled" {
-  type = bool
-  description = "Boolean flag to enable private DNS"
-  default = false
-}
