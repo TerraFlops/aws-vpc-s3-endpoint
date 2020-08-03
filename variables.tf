@@ -11,6 +11,6 @@ variable "name" {
 
 variable "route_table_ids" {
   type = set(string)
-  description = "IDs of route teables where endpoint will be exposed"
+  description = "IDs of route tables where endpoint will be exposed"
   default = null
 }
